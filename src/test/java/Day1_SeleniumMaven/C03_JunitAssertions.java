@@ -3,7 +3,9 @@ package Day1_SeleniumMaven;
 import io.github.bonigarcia.wdm.WebDriverManager;
 
 import org.junit.*;
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 
 public class C03_JunitAssertions {
@@ -42,6 +44,7 @@ public class C03_JunitAssertions {
         //URL amazon kelimesini iceriyor mu kontrol saglaniyor
         Assert.assertTrue("URL 'amazon' icermiyor", currentUrl.contains("amazon"));
 
+
     }
     @Test
     public void titleTest(){
@@ -49,4 +52,6 @@ public class C03_JunitAssertions {
         String title = driver.getTitle();
         Assert.assertFalse("Title 'Facebook' icermiyor",title.contains("Facebook"));
     }
+
+
 }
