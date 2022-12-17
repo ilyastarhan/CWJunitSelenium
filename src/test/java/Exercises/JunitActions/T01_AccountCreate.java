@@ -1,7 +1,6 @@
 package Exercises.JunitActions;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
-import org.apache.hc.core5.util.Asserts;
 import org.junit.After;
 import org.junit.Assert;
 import org.junit.Before;
