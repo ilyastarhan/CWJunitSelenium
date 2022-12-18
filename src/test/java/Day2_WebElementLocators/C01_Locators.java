@@ -119,7 +119,7 @@ public class C01_Locators {
 
     @Test
     public void startsWithxPath(){
-       // WebElement email = driver.findElement(By.xpath("//input[startsWith(@id, "))
+        WebElement email = driver.findElement(By.xpath("//input[startsWith(@id,'email')]"));
 
     }
 
