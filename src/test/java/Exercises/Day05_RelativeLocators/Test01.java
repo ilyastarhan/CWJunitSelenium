@@ -1,16 +1,13 @@
-package Exercises.Day04_CheckBox;
+package Exercises.Day05_RelativeLocators;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.junit.After;
 import org.junit.Before;
-import org.junit.Test;
-import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.support.ui.Select;
 
 import java.time.Duration;
-import java.util.List;
 
 public class Test01 {
 
@@ -33,13 +30,4 @@ public class Test01 {
 
     }
 
-    @Test
-    public void test() {
-        driver.get("https://itera-qa.azurewebsites.net/home/automation");
-        List<WebElement> checkbox = driver.findElements(By.xpath("//input[@type='checkbox' and @class='form-check-input']"));
-        for (WebElement webElement : checkbox) {
-            webElement.click();
-        }
-
-    }
 }
