@@ -32,11 +32,10 @@ public class Actions04 {
     @Test
     public void actionTest() throws InterruptedException {
         driver.get("https://rangeslider.js.org/");
-        WebElement cursor = driver.findElement(By.id("js-rangeslider-0"));
+        WebElement slider = driver.findElement(By.className("rangeslider__handle"));
         Actions action = new Actions(driver);
-
-        action.dragAndDropBy(cursor,0,100).perform();
-        action.dragAndDropBy(cursor,100,0).perform();
+        action.dragAndDropBy(slider,-100,0).perform();
+        action.dragAndDropBy(slider,100,0).perform();
 
 
 
