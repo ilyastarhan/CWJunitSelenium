@@ -15,13 +15,12 @@ public class C04_Actions extends BaseTest {
         driver.get("https://demoqa.com/auto-complete");
         WebElement input = driver.findElement(By.id("autoCompleteMultipleContainer"));
         Actions action = new Actions(driver);
-        action.keyDown(Keys.SHIFT).sendKeys(input,"y")
+        action.keyDown(Keys.SHIFT).sendKeys(input, "y")
                 .keyUp(Keys.SHIFT).sendKeys("ou are ")
                 .keyDown(Keys.SHIFT).sendKeys("e")
                 .keyUp(Keys.SHIFT).sendKeys("xceptional").build().perform();
         action.click(driver.findElement(By.id("autoCompleteSingleContainer")))
                 .sendKeys("Red").perform();
-
 
     }
 }
