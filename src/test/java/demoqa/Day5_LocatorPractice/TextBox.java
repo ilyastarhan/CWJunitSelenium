@@ -1,4 +1,4 @@
-package demoqa;
+package demoqa.Day5_LocatorPractice;
 
 import com.github.javafaker.Faker;
 import io.github.bonigarcia.wdm.WebDriverManager;

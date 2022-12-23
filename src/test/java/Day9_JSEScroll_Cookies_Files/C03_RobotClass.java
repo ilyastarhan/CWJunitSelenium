@@ -6,6 +6,7 @@ import org.openqa.selenium.WebElement;
 import utilities.BaseTest;
 
 import java.awt.*;
+import java.awt.event.InputEvent;
 import java.awt.event.KeyEvent;
 
 public class C03_RobotClass extends BaseTest {
