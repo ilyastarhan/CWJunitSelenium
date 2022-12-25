@@ -19,5 +19,6 @@ public class C05_SeleniumWaits extends BaseTest {
         WebElement category = driver.findElement(By.xpath("(//div[@class='icon'])[3]"));
         wait.until(ExpectedConditions.elementToBeClickable(category)).click();
         wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//li[contains(.,'Practice Form')]"))).click();
+
     }
 }
