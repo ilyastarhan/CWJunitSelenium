@@ -1,6 +1,7 @@
 package Day10_ApachePOI;
 
 import org.apache.poi.ss.usermodel.*;
+import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 import org.junit.Assert;
 import org.junit.Test;
 import utilities.BaseTest;
@@ -53,7 +54,7 @@ public class C02_ApachePoiTask extends BaseTest {
         Map<String, String> data = new HashMap<>();
         for (int i = 1; i <= totalRow; i++) {
             String country = sheet1.getRow(i).getCell(0).toString();
-            String area = sheet1.getRow(i).getCell(1).toString();
+            String area = sheet1.getRow(i).getCell(1).getStringCellValue();
             data.put(country,area);
         }
         System.out.println(data);
