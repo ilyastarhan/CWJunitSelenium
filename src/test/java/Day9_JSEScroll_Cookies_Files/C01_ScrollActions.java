@@ -5,7 +5,7 @@ import org.openqa.selenium.Keys;
 import org.openqa.selenium.interactions.Actions;
 import utilities.BaseTest;
 
-public class C1_ScrollActions extends BaseTest {
+public class C01_ScrollActions extends BaseTest {
 
 
 

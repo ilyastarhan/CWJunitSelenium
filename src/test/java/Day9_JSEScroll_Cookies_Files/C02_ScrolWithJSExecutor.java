@@ -7,7 +7,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 import utilities.BaseTest;
 
-public class C2_ScrolWithJSExecutor extends BaseTest {
+public class C02_ScrolWithJSExecutor extends BaseTest {
 
         /*
             executeScript("window.scrollBy(x-piksel,y-piksel)");  ya da js.executeScript("scroll(x,y);");

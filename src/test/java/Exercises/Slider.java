@@ -19,5 +19,6 @@ public class Slider extends BaseTest {
         action.dragAndDropBy(slider, -70,0).perform();
         action.dragAndDropBy(slider, 70,0).perform();
         action.dragAndDropBy(slider, 0,-100).perform();
+
     }
 }
