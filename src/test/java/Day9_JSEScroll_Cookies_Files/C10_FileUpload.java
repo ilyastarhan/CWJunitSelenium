@@ -6,6 +6,8 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import utilities.BaseTest;
 
+import java.util.List;
+
 public class C10_FileUpload extends BaseTest {
     @Test
     public void fileUpload() {
@@ -18,6 +20,7 @@ public class C10_FileUpload extends BaseTest {
         WebElement uploadBtn = driver.findElement(By.id("file-submit"));
         uploadBtn.click();
      //   Verify the upload message.
+
         WebElement result = driver.findElement(By.tagName("h3"));
         Assert.assertTrue(result.isDisplayed());
         Assert.assertEquals("File Uploaded!", result.getText());

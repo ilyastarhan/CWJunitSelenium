@@ -1,15 +1,16 @@
 package Day10_ApachePOI;
 
+import org.apache.poi.hssf.usermodel.HSSFWorkbook;
 import org.apache.poi.ss.usermodel.*;
 import utilities.BaseTest;
 
-import java.io.FileInputStream;
-import java.io.FileNotFoundException;
-import java.io.IOException;
+import java.io.*;
+import java.nio.file.Files;
 
 public class C01_ExcelMethods {
 
     public static void main(String[] args) throws IOException {
+
         String path="src\\test\\java\\resources\\excelfile.xlsx";
         FileInputStream fis = new FileInputStream(path);
         Workbook workbook = WorkbookFactory.create(fis);
